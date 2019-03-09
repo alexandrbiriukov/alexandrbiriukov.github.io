@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Мое портфолио</title>
+</head>
+<body>
+    <header class="page-header">
+       <div class="photo-from" id="photoo">
+        <img src="img/1551973872998.png" class="photo-from-header"></div>
+    </header>
+    <ul class="menu">
+        <li class="comments"><a href="#vk">Контакты</a></li>
+        <li class="comments"><a href="#o-cebe">Обо мне</a></li>
+        <li class="comments"><a href="#">Мои работы</a></li>
+        <li class="comments"><a href="#">Что я могу</a></li>
+        <li class="comments"><a href="https://vk.com/alexandrbir">Я в соц. сетях</a></li>  
+    </ul>
+    
+    <div class="wrapper">
+        <div class="page-photo">
+            <img src="img/YO0lfogkNrM%20(1).jpg">    
+        </div>
+        <div class="text"><a name="o-cebe">Привет! <br/>Меня зовут Бирюков Александр ( сокращенно BirAl ). <br/>Мне 14 лет, и я живу в городе <b>Москва</b>. <br/>Долгое время обучался навыкам <b>HTML</b> и <b>CSS</b>. <br/>Учился в академии "<b>CODING SKILLS</b>". <br/>В свободное время я занимаюсь спортом и гуляю с друзьями</a> </div>
+    </div>
+    
+    <footer class="page-foot">
+        <div class="page-up">
+            <a href="#photoo">Наверх</a>
+            
+        </div>
+        <div class="goodbye">Не знаю, что писать в конце:)</div>
+            <div class="vk">
+                <a href="https://vk.com/alexandrbir">
+                    <img src="img/vk.png" class="vk-photo" id="vk">
+                </a>
+            </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('a[href^="#"]').click(function () { 
+			    var elementClick = $(this).attr("href");
+				var destination = $(elementClick).offset().top;
+				 
+			    	$('body, html').animate( { scrollTop: destination-100 }, 1000 );
+				
+				return false;
+		   });
+
+         });
+        </script>
+
+</body>
+</html>
